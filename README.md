@@ -1,19 +1,19 @@
 # Ağ Yapılandırması
-Ağ Yapılandırması ve Dinamik Yönlendirme
+Ağ Konfigürasyonu ve Otomatik Yönlendirme Protokolleri
 
 
 # Ağ Topolojisi ve Yapılandırma Deposu
-Bu yapılandırma dosyası, farklı yönlendirme protokolleri ve ağ servislerini içeren bir ağ topolojisini tanımlar. İçerikte BGP, OSPF, EIGRP, PPPoE, CHAP ve Multilink gibi önemli ağ protokolleri bulunmaktadır.
+Bu konfigürasyon dosyası, çeşitli yönlendirme protokolleri ve ağ hizmetlerinin bir arada kullanıldığı bir ağ topolojisini tanımlar. İçeriğinde BGP, OSPF, EIGRP, PPPoE, CHAP ve Multilink gibi temel ağ protokollerine yer verilmiştir.
 
 İçerik Başlıkları
 #  1. Ağ Yapılandırması (Network Configuration)
-Tanımlanan IP ağları ve subnet mask bilgileri
+Konfigürasyonda yer alan IP adresleme ve subnet mask detayları
 
 # 2. BGP (Border Gateway Protocol) Yapılandırması
 BGP yönlendirme protokolü
 
  Otonom sistemler (AS) arasında bağlantılar
- Komşu (neighbor) yapılandırmaları
+Komşuluk ilişkileri yapılandırmaları
 
 # 3. OSPF (Open Shortest Path First) Yapılandırması
 OSPF yönlendirme protokolü
@@ -589,21 +589,3 @@ exit <br>
 
 ip nat inside source static 192.168.200.10 10.101.0.50 <br>
 
-## Katkıda Bulunma
-
-Bu projeye katkıda bulunmak için lütfen aşağıdaki adımları izleyin:
-
-1.  Depoyu fork edin.
-2.  Değişikliklerinizi içeren bir branch oluşturun (`git checkout -b my-new-feature`).
-3.  Değişikliklerinizi commit edin (`git commit -am 'Add some feature'`).
-4.  Branch'inizi remote'a push edin (`git push origin my-new-feature`).
-5.  Çekme isteği (pull request) oluşturun.
-
-## Lisans
-
-Bu depo MIT lisansı altında yayınlanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakın.
-
-
-Bu güncellenmiş README.md dosyası, tüm router konfigürasyonlarını ve show ip interface brief ile show ip route çıktısını içermektedir. Bu, depoyu kullanan kişilere daha kapsamlı bir genel bakış sunacaktır.
-
-Lütfen unutmayın, yine de hassas bilgileri (parolalar, anahtarlar vb.) tüm dosyalardan kaldırmanız gerekmektedir.
